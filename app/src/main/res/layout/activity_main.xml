@@ -15,41 +15,41 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
             android:gravity="center"
             android:layout_above="@+id/card_view"
             android:padding="28dp">
 
             <ImageView
-                android:layout_width="143dp"
-                android:layout_height="110dp"
+                android:layout_width="170dp"
+                android:layout_height="126dp"
                 android:src="@drawable/the_high_end" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="113dp"
                 android:layout_height="wrap_content"
-                android:text="THE HIGH END.Co"
-                android:textStyle="bold"
                 android:fontFamily="@font/poppinssemibold"
+                android:text="THE HIGH END.Co"
+                android:textColor="#9C896E"
                 android:textSize="29sp"
-                android:textColor="#9C896E" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
-<androidx.cardview.widget.CardView
-    android:id="@+id/card_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    app:cardCornerRadius="28dp"
-    android:layout_marginBottom="-20dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="28dp"
+            android:layout_marginBottom="-20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="28dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
             android:textColor="@color/black"
             android:drawableStart="@drawable/outline_email_24"
             style="" />
-        
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:drawableEnd="@drawable/password_icon" />
 
         <RelativeLayout
@@ -135,7 +135,7 @@
         <View
             android:layout_width="wrap_content"
             android:layout_height="10dp" />
-        
+
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -154,7 +154,7 @@
             android:fontFamily="@font/poppinsregular"
             android:layout_gravity="center"
             android:alpha="0.7" />
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -182,9 +182,9 @@
 
         </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
@@ -197,21 +197,23 @@
             android:alpha="0.7" />
 
         <TextView
+            android:id="@+id/text_move_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsregular"
             android:text="Sign Up"
             android:layout_marginLeft="241dp"
             android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="openNewActivity"
             android:textStyle="bold"/>
 
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
-
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
-    </RelativeLayout>
-
-
 
 </RelativeLayout>
